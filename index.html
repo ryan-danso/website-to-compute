@@ -1,56 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- 
-      This is an HTML comment
-      You can write text in a comment and the content won't be visible in the page
-    -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ryan Danso's PPSSPP Game Hub</title>
+  <style>
+    /* Base */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
 
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" href="https://glitch.com/favicon.ico" />
+    /* Header */
+    header {
+      background: linear-gradient(90deg, gold, #fff);
+      color: #000;
+      padding: 20px 0;
+      text-align: center;
+    }
 
-  <!--
-      This is the page head - it contains info the browser uses
-      Like the title, which appears on the browser tab but not inside the page
-      Further down you'll see the content that displays in the page
-    -->
-  <title>Hello World!</title>
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 10px;
+    }
 
-  <!-- The website stylesheet -->
-  <link rel="stylesheet" href="/style.css" />
+    nav a {
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-  <!-- The website JavaScript file -->
-  <script src="/script.js" defer></script>
+    /* Hero Section */
+    .hero {
+      background: #111;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      color: gold;
+    }
+
+    .btn {
+      background: gold;
+      color: black;
+      padding: 10px 20px;
+      border: none;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 15px;
+    }
+
+    /* Game Section */
+    .section {
+      padding: 40px 20px;
+    }
+
+    .game-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .game-card {
+      background: #222;
+      border: 2px solid gold;
+      border-radius: 10px;
+      width: 200px;
+      text-align: center;
+      padding: 15px;
+    }
+
+    .game-card img {
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    .game-card h3 {
+      margin: 10px 0 5px;
+      color: gold;
+    }
+
+    .game-card a {
+      display: inline-block;
+      margin-top: 5px;
+      color: #fff;
+      background: gold;
+      padding: 5px 10px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Footer */
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid #444;
+      font-size: 14px;
+    }
+  </style>
 </head>
-
 <body>
-  <!--
-      The body includes the content you see in the page
-      Each element is defined using tags, like this <div></div>
-      The attributes like class="wrapper" let us style elements in the CSS
-    -->
-  <div class="wrapper">
-    <div class="content" role="main">
-      <h1 class="title">Oh hi website!</h1>
-      <img src="/cool-website.svg" class="illustration" alt="cool website" />
-      <div class="instructions">
-        <p>
-          Fork <a href="https://github.com/glitchdotcom/website-to-compute">this project</a> and open it in a GitHub Codespace.
-        </p>
-        <p> Follow the steps in the README to deploy your new website to Fastly in a few steps!
-        </p>
-
-      </div>
-
-      <footer class="footer">
-        <div>
-          <a class="remix" href="https://github.com/glitchdotcom/website-to-compute">🚧 Get your own site</a>
-        </div>
-      </footer>
+  <header>
+    <div class="container">
+      <h1>PPSSPP Game Hub</h1>
+      <p>By Ryan Danso</p>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Games</a></li>
+          <li><a href="#">Cheats</a></li>
+          <li><a href="#">Textures</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-  </div>
-</body>
+  </header>
 
-</html>
+  <section class="hero">
+    <div class="container">
+      <h2>Welcome to the Ultimate PSP Experience!</h2>
+      <p>Download games, HD textures, cheats, and more — all optimized for PPSSPP Gold!</p>
+      <a href="#games" class="btn">Explore Games</a>
+    </div>
+  </section>
+
+  <section id="games" class="section">
+    <div class="container">
+      <h2 style="text-align: center; color: gold;">Top PPSSPP Games</h2>
+      <div class="game-grid">
+        <div class="game-card">
+          <img src="https://via.placeholder.com/200x120?text=GTA+LCS" alt="GTA LCS" />
+          <h3>GTA Liberty City Stories</h3>
+          <a href="#">Download</a>
+        </div>
+        <div class="game-card">
+          <img src="https://via.placeholder.com/200x120?text=Naruto+Impact" alt="Naruto" />
+          <h3>Naruto Ninja Impact</h3>
+          <a href="#">Download</a>
+        </div>
+        <div class="game-card">
+          <img src="https://via.placeholder.com/200x120?text=Tekken+6" alt="Tekken 6" />
+          <h3>Tekken 6</h3>
+          <a href="#">Download</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Ryan Danso. All rights reserved.</p>
+      <p>Contact: ryandanso123@gmail.com | WhatsApp: +233543113918</p>
+    </div>
+  </footer>
+</body>
+                                  </html>
